@@ -50,10 +50,7 @@ const PortfolioPage = () => {
 
   return (
     <motion.div
-      ref={portfolioRef}
-      initial={{ x: "-300px" }}
-      animate={{ x: isPortfolioInView && 0 }}
-      transition={{ duration: 0.5 }}
+      
       className='w-screen h-full overflow-y-scroll'
     >
       {/* CONTAINER */}
@@ -64,8 +61,8 @@ const PortfolioPage = () => {
         </h1>
         {/* GRID */}
         <motion.div
-          initial={{ x: "-300px" }}
-          animate={{ x: isPortfolioInView && 0 }}
+          initial={{ x: "-300px", opacity:0 }}
+          animate={{ x: isPortfolioInView && 0, opacity: isPortfolioInView && 1 }}
           ref={portfolioRef}
           transition={
             {
@@ -94,6 +91,7 @@ const PortfolioPage = () => {
           ))}
         </motion.div>
       </div>
+       
     </motion.div>
   )
 }

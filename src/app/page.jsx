@@ -10,11 +10,11 @@ const Homepage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 0.5 }}
-      className="h-full flex flex-col md:flex-row">
+      className="h-full flex flex-col md:flex-row md:items-center">
 
       {/* IMAGE CONTAINER */}
-      <div className="h-1/2 md:h-full md:w-1/2 relative z-0">
-        <Image src="/hero.png" alt="" fill className="object-contain" />
+      <div className="h-1/2 md:h-3/4 md:w-1/2 relative z-0 ">
+        <Image src="/me.png" alt="" fill className="object-contain rounded-xl" />
       </div>
 
       {/* TEXT CONTAINER */}

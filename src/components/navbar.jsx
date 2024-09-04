@@ -47,34 +47,42 @@ function Navbar() {
     return (
         <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
             {/* LOGO */}
-            <div className="h">
+            <div className="hidden md:block">
                 <span className='font-bold'>Firman Handi Pratama</span>
             </div>
-            <div className='hidden md:flex gap-5'>
+            <div className='flex gap-5 text-sm md:text-base w-full md:w-fit justify-between'>
                 {links.map((link) => (
                     <NavLink link={link} key={link.title} />
                 ))}
             </div>
             {/* RESPONSIVE MENU */}
-            <div className="md:hidden">
-                <button onClick={() => setOpen(((prev) => !prev))} className='w-10 h-8 flex flex-col justify-between z-50 relative'>
-                    <motion.div variants={topVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded origin-left`}></motion.div>
-                    <motion.div variants={centerVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded`}></motion.div>
-                    <motion.div variants={bottomVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded origin-left`}></motion.div>
-                </button>
-                {/* MENU LIST */}
-                {open && (
-                    <div className='absolute h-screen w-screen bg-black text-white flex flex-col top-0 left-0 items-center justify-center gap-8 text-4xl z-40'>
-                        {links.map((link => (
-                            <Link href={link.url} key={link.title}>
-                                {link.title}
-                            </Link>
-                        )))}
-                    </div>
-                )}
-            </div>
+           
         </div>
     )
 }
 
 export default Navbar
+
+// <div className="hidden">
+// <button onClick={() => setOpen(((prev) => !prev))} className='w-10 h-8 flex flex-col justify-between z-50 relative'>
+//     <motion.div variants={topVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded origin-left`}></motion.div>
+//     <motion.div variants={centerVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded`}></motion.div>
+//     <motion.div variants={bottomVariant} animate={open ? "opened" : "closed"} className={`w-10 h-1 bg-black rounded origin-left`}></motion.div>
+    
+// </button>
+// {/* MENU LIST */}
+// {open && (
+//     <div className='absolute h-screen w-screen bg-black text-white flex flex-col top-0 left-0 items-center justify-center gap-8 text-4xl z-40'>
+//         {/* {links.map((link => (
+//             <Link href={link.url} key={link.title}>
+//                 {link.title}
+//             </Link>
+//         )))} */}
+//         <Link href="/">Home</Link>
+//         <Link href="/about">About</Link>
+//         <Link href="/portfolio">Portfolio</Link>
+//         <Link href="/contact">Contact</Link>
+        
+//     </div>
+// )}
+// </div>

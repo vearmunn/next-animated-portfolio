@@ -21,7 +21,7 @@ const PortofolioDetail = ({ imgUrl, title, descripton, repoUrl }) => {
                 <p className='text-justify text-sm md:text-base'>{descripton}</p>
                 <button 
                 onClick={()=> window.open(repoUrl)}
-                className='w-full px-4 py-3 border-[1px] border-black md:w-fit rounded-full hover:bg-black hover:text-white'>Github Repository</button>
+                className='w-full px-4 py-3 border-[1px] border-black md:w-fit rounded-full hover:bg-black hover:text-white'>See Github Repository</button>
                 <div className='mt-3'></div>
             </div>
         </motion.div>
