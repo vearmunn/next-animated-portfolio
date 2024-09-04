@@ -20,7 +20,7 @@ const Homepage = () => {
       {/* TEXT CONTAINER */}
       <div className="h-1/2 md:h-full md:w-1/2 flex flex-col justify-center items-center gap-4 md:gap-8 p-4 sm:pr-8 md:pr-12 lg:pr-20 xl:pr-48">
         {/* TITLE */}
-        <p className="text-lg md:text-2xl font-semibold text-gray-500">Hello, I'm</p>
+        <p className="text-lg md:text-2xl font-semibold text-gray-500">Hello, I am</p>
         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center">Firman Handi Pratama</h1>
         {/* DESC */}
         <p className="text-xl lg:text-3xl xl:text-4xl text-gray-600 font-bold ">Mobile Developer</p>
