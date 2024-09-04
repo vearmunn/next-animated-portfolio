@@ -34,9 +34,7 @@ const AboutPage = () => {
           <div className='flex flex-col gap-4'>
             <h1 className='text-xl md:text-3xl font-bold'>About Me</h1>
             <p className='text-sm md:text-base'> Hello, My name is Firman Handi Pratama, I am a dedicated and passionate software developer with a background in coding since high school and hands-on experience in Flutter development since 2021. My expertise extends to integrating third-party services, managing state efficiently, and optimizing app performance for a seamless user experience. Ready to utilize my skills and passion to further your company. Willing and motivated to learn new things.</p>
-            <button className='w-32 py-3 bg-black text-white rounded-full '>
-              Download CV
-            </button>
+            
             <div className='flex gap-5'>
               <button 
               onClick={()=> window.open("https://www.linkedin.com/in/firman-pratama-718a57118/")}
