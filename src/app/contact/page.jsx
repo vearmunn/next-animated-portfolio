@@ -23,7 +23,7 @@ const ContactPage = () => {
           </div>
           {/* LINKEDIN */}
           <button 
-           onClick={()=> window.open("https://www.linkedin.com/in/firman-pratama-718a57118/")}
+           onClick={()=> window.open("https://www.linkedin.com/in/firman-handi-pratama-718a57118")}
           className='flex items-center gap-2'>
             <img src="./linkedin.png" alt=""  className='w-10 h-10'/>
             <p className='underline text-blue-500'>LinkedIn</p>
