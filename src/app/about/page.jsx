@@ -5,7 +5,7 @@ import { motion, useScroll, useInView } from 'framer-motion'
 import Brain from '@/components/brain';
 
 const AboutPage = () => {
-  const skills = ["Flutter", "Dart", "Rest API", "GetX", "BLOC", "Firebase", "Supabase", "Github", "JavaScript", "ReactJS", "NextJS", "HTML", "CSS", "TailwindCSS", "Python", "MySQL"];
+  const skills = ["Flutter", "Dart", "Rest API", "GetX", "BLOC","OOP", "MVC",  "Firebase", "Supabase", "Github", "JavaScript", "ReactJS", "NextJS", "HTML", "CSS", "TailwindCSS", "Python", "MySQL"];
 
   const containerRef = useRef()
   const skillRef = useRef()
