@@ -14,7 +14,7 @@ const Homepage = () => {
 
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 md:h-3/4 md:w-1/2 relative z-0 ">
-        <Image src="/me.png" alt="" fill className="object-contain rounded-xl" />
+        <img src="/me.png" alt="" fill className="object-contain rounded-xl" />
       </div>
 
       {/* TEXT CONTAINER */}

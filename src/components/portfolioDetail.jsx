@@ -14,7 +14,7 @@ const PortofolioDetail = ({ imgUrl, title, descripton, repoUrl }) => {
             className='w-full h-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 flex flex-col md:flex-row overflow-y-scroll'>
             {/* IMAGE */}
             <div className='w-full md:w-1/2 h-full'>
-                <Image src={`../${imgUrl}/main_image.png`} alt="" className='w-full h-full object-contain' />
+                <img src={`../${imgUrl}/main_image.png`} alt="" className='w-full h-full object-contain' />
             </div>
             {/* TEXT CONTAINER */}
             <div className='w-full md:w-1/2 h-full flex flex-col justify-center gap-5 mt-10 md:mt-0 md:pl-10 lg:pl-12 xl:pl-14'>

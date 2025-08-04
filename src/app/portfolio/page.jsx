@@ -3,9 +3,16 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const PortfolioPage = () => {
   const projects = [
+    {
+      title: "DailyCore",
+      imgURL: "./dailycore/thumbnail.png",
+      repoURL: "https://github.com/vearmunn/dailycore",
+      portofolioPath: "/portfolio/dailycore"
+    },
     {
       title: "Aplikasi Monitoring PKL",
       imgURL: "./monitoring/thumbnail.png",
@@ -17,12 +24,6 @@ const PortfolioPage = () => {
       imgURL: "./chat_app/thumbnail.png",
       repoURL: "https://github.com/vearmunn/chat_app",
       portofolioPath: "/portfolio/chat-app"
-    },
-    {
-      title: "Warble Social Media",
-      imgURL: "./warble/thumbnail.png",
-      repoURL: "https://github.com/vearmunn/warble_social_media",
-      portofolioPath: "/portfolio/warble"
     },
     {
       title: "Quiz Odyssey",
@@ -50,7 +51,7 @@ const PortfolioPage = () => {
 
   return (
     <motion.div
-      
+
       className='w-screen h-full overflow-y-scroll'
     >
       {/* CONTAINER */}
@@ -61,7 +62,7 @@ const PortfolioPage = () => {
         </h1>
         {/* GRID */}
         <motion.div
-          initial={{ x: "-300px", opacity:0 }}
+          initial={{ x: "-300px", opacity: 0 }}
           animate={{ x: isPortfolioInView && 0, opacity: isPortfolioInView && 1 }}
           ref={portfolioRef}
           transition={
@@ -76,7 +77,7 @@ const PortfolioPage = () => {
               key={project}
 
               className='border-[1px] border-gray-400 rounded-2xl p-5 flex flex-col items-center gap-6'>
-              <img src={project.imgURL} alt="" className='aspect-square object-cover rounded-2xl' />
+              <Image src={project.imgURL} alt="" className='aspect-square object-cover rounded-2xl' />
               <h1 className='text-2xl md:text-3xl font-bold'>{project.title}</h1>
               <div className='flex gap-4'>
                 <button
@@ -91,7 +92,7 @@ const PortfolioPage = () => {
           ))}
         </motion.div>
       </div>
-       
+
     </motion.div>
   )
 }
