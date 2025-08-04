@@ -77,7 +77,7 @@ const PortfolioPage = () => {
               key={project}
 
               className='border-[1px] border-gray-400 rounded-2xl p-5 flex flex-col items-center gap-6'>
-              <Image src={project.imgURL} alt="" className='aspect-square object-cover rounded-2xl' />
+              <img src={project.imgURL} alt="" className='aspect-square object-cover rounded-2xl' />
               <h1 className='text-2xl md:text-3xl font-bold'>{project.title}</h1>
               <div className='flex gap-4'>
                 <button
